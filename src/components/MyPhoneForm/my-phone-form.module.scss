@@ -1,0 +1,40 @@
+.form {
+    width: 400px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(12, 91, 250);
+    
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    color: white;
+    display: grid;
+    gap: 10px;
+}
+
+.textField {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    width: 30%;
+    color: rgb(9, 32, 241);
+    background-color: rgb(253, 236, 4);
+    border: none;
+    border-radius: 6px;
+    margin: 15px 0 0 auto;
+    font: inherit;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: rgb(251, 237, 112);
+}

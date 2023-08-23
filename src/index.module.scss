@@ -1,13 +1,16 @@
 .wrapper {
-    width: 500px;
-    color: rgb(9, 32, 241);
-    margin: 30px auto;
-    box-shadow: 10px 15px 19px -4px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 15px 19px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 15px 19px -4px rgba(0, 0, 0, 0.75);
-    border-radius: 20px;
-    border: 1px solid #000;
-    text-align: center;
-    padding: 40px;
+  padding: 20px 0;
 }
 
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 25px;
+  color: rgb(12, 91, 250);
+}
+
+.blocks {
+  //display: block;
+  gap: 20px;
+}

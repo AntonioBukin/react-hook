@@ -1,0 +1,25 @@
+.list {
+  margin: 20px 0px;
+
+  &Item {
+    margin-bottom: 10px;
+  }
+}
+
+.button {
+  padding: 15px;
+  //margin-top: 10px;
+  width: 20%;
+  color: rgb(9, 32, 241);
+  background-color: rgb(253, 236, 4);
+  border: none;
+  border-radius: 6px;
+  margin: 15px 0 0 auto;
+  font: inherit;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(251, 237, 112);
+}
