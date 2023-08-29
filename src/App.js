@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 
 import MyPhoneBlock from './components/MyPhoneBlock/MyPhoneBlock';
@@ -9,8 +9,15 @@ import styles from './index.module.scss';
 import './shared/styles/styles.scss';
 
 const MyPhone = () => {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState(() => {
+    const contacts = JSON.parse(localStorage.getItem('MyPhone')); //беремо строку, перетворюємо на масив та додаємо у setState
+    return contacts && contacts.length ? contacts : [];
+  });
   const [filter, setFilter] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('MyPhone', JSON.stringify(contacts)); 
+  }, [contacts])
 
   const handleFilter = ({ target }) => setFilter(target.value); //ф-ція яка записує target.value у фільтр
 
